@@ -1,0 +1,153 @@
+{
+  "info": {
+    "_postman_id": "f5140c91-c091-4ea2-b4d7-615081604293",
+    "name": "dividaAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50559258",
+    "_collection_link": "https://go.postman.co/collection/50559258-f5140c91-c091-4ea2-b4d7-615081604293?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "criarDivida",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"cpfDevedor\": \"123.456.789-00\",\n    \"valorPego\": 1000.00,\n    \"valorComJuros\": 1200.00,\n    \"valorComDesconto\": 1050.00\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/dividas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "dividas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listarTodasAsDividas",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"cpfDevedor\": \"123.456.789-00\",\n    \"valorPego\": 1000.00,\n    \"valorComJuros\": 1200.00,\n    \"valorComDesconto\": 1050.00\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/dividas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "dividas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "buscarDivida",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"cpfDevedor\": \"123.456.789-00\",\n    \"valorPego\": 1000.00,\n    \"valorComJuros\": 1200.00,\n    \"valorComDesconto\": 1050.00\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/dividas/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "dividas",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "atualizarDivida",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"cpfDevedor\": \"123.456.789-00\",\n    \"valorPego\": 1000.00,\n    \"valorComJuros\": 1150.00,\n    \"valorComDesconto\": 1020.00\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/dividas/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "dividas",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deletarDividas",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"cpfDevedor\": \"123.456.789-00\",\n    \"valorPego\": 1000.00,\n    \"valorComJuros\": 1200.00,\n    \"valorComDesconto\": 1050.00\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/dividas/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "dividas",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "econtrarPorCPF",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
